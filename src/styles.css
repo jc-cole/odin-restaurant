@@ -1,0 +1,10 @@
+body {
+    height: 100vh;
+    margin: 0px;
+    background-image: linear-gradient(to bottom, rgb(31, 79, 200), lightblue);
+}
+
+#content {
+    height: 95%;
+    background-image: url("./images/droplets2.png");
+}
