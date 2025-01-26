@@ -11,8 +11,6 @@
     font-style: normal;
 }
 
-
-
 .bodoni-moda {
   font-family: "Bodoni Moda", serif;
   font-optical-sizing: auto;
@@ -22,6 +20,22 @@
 
 h1 {
     margin: 0px;
+}
+
+h2 {
+    margin: 0px;
+    font-family: "Monsieur La Doulaise", serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+h3 {
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--white);
 }
 
 body {
@@ -35,10 +49,14 @@ body {
 }
 
 header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    backdrop-filter: saturate(180%) blur(10px);
+    width: 100vw;
+    z-index: 10;
 }
 
 header h1 {
@@ -50,6 +68,7 @@ header h1 {
 nav {
     display: flex;
     height: 100%;
+    margin: 10px 50px;
 }
 
 nav button {
@@ -67,4 +86,69 @@ nav button:not(:first-child) {
     border-width: 0px;
     border-left-width: 2px;
     
+}
+
+blockquote {
+    font-family: "Bodoni Moda", serif;
+    font-size: 60px;
+    color: var(--white);
+    font-weight: bolder;
+    align-self: center;
+    margin-bottom: 0px;
+}
+
+#quote-attribution {
+    font-family: "Monsieur La Doulaise";
+    font-size: 30px;
+    color: var(--white);
+    font-weight: bolder;
+    align-self: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-content p {
+    align-self: baseline;
+    font-family: "Bodoni Moda", serif;
+    font-size: 20px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+#image {
+    background-image: url("./images/water1.jpg");
+    height: 500px;
+    grid: 1 / 2;
+}
+
+#main-content {
+    background: rgba(0, 0, 0, 0.179);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-radius: 30px;
+    height: 700px;
+    margin: 80px min(100px, 25%);
+    margin-bottom: 100px;
+    padding: 50px;
+
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.blank-space {
+    height: 150px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    align-self: top;
 }
