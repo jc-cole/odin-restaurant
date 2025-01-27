@@ -39,7 +39,6 @@ h3 {
 }
 
 body {
-    height: 100vh;
     margin: 0px;
     background-image: linear-gradient(to bottom, var(--blue), var(--light-blue));
 }
