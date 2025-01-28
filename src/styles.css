@@ -18,6 +18,10 @@
   font-style: normal;
 }
 
+.active-button {
+    text-decoration: underline;
+}
+
 h1 {
     margin: 0px;
 }
@@ -41,10 +45,6 @@ h3 {
 body {
     margin: 0px;
     background-image: linear-gradient(to bottom, var(--blue), var(--light-blue));
-}
-
-#content {
-    background-image: url("./images/droplets2.png");
 }
 
 header {
@@ -109,7 +109,7 @@ blockquote {
     flex-direction: column;
 }
 
-#main-content p {
+#main-content p, #main-content-2 p {
     align-self: baseline;
     font-family: "Bodoni Moda", serif;
     font-size: 20px;
@@ -117,11 +117,13 @@ blockquote {
     font-weight: bold;
 }
 
+
 #image {
     background-image: url("./images/water1.jpg");
     height: 500px;
     grid: 1 / 2;
 }
+
 
 #main-content {
     background: rgba(0, 0, 0, 0.179);
@@ -137,6 +139,22 @@ blockquote {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
 }
+
+#main-content-2 {
+    background: rgba(0, 0, 0, 0.179);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-radius: 30px;
+    height: 700px;
+    margin: 80px min(100px, 25%);
+    margin-bottom: 100px;
+    padding: 50px;
+
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
 
 .blank-space {
     height: 150px;
